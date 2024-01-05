@@ -7,7 +7,7 @@ app.get('/api/v1/images', (req, res) => {
   console.log(`server is ${PORT}port`);
   console.log('test');
   res.send(
-    'Hello-NodeJS-renderにデプロイできました！！！ホットリロードはきいちょるんすか？？今回はいけちょるでしょ！！！'
+    `Hello-NodeJS-renderにデプロイできました！！！ホットリロードはきいちょるんすか？？今回はいけちょるでしょ！！！${process.env.DOCKER_TEST}`
   );
 });
 
