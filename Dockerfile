@@ -5,6 +5,6 @@ WORKDIR /app
 COPY ./ ./
 
 RUN npm install
-ENV PORT=8080
+# ENV PORT=8080
 
 CMD npm run dev
