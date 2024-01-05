@@ -5,7 +5,10 @@ require('dotenv').config();
 
 app.get('/api/v1/images', (req, res) => {
   console.log(`server is ${PORT}port`);
-  res.send('Hello-NodeJS-renderにデプロイできました！！！');
+  console.log('test');
+  res.send(
+    'Hello-NodeJS-renderにデプロイできました！！！ホットリロードはきいちょるんすか？？今回はいけちょるでしょ！！！'
+  );
 });
 
 app.listen(PORT, () => {
